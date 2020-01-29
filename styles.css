@@ -4,25 +4,25 @@
 }
 
 p {
-  display: block;
+  display: inline;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 #desc {
-  display: block;
+  display: inline;
   width: 500px;
   margin: 40px auto;
   font: 25px Arial,monospace;
 }
 #title{
-  display: block;
+  display: inline;
   width: 1000px;
   margin: 10px auto;
   font: 40px Helvetica,monospace;
 }
 #name{
-  display: block;
+  display: inline;
   width: 700px;
   margin: 10px auto;
   font: 60px Lucida Console,monospace;
