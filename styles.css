@@ -18,13 +18,11 @@ p {
 }
 #title{
   display: center;
-  width: 400px;
   margin: 10px auto;
   font: 40px Helvetica,monospace;
 }
 #name{
   display: center;
-  width: 400px;
   margin: 10px auto;
   font: 60px Lucida Console,monospace;
 } 
