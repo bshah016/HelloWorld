@@ -10,19 +10,16 @@ p {
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 #desc {
-  display: inline-block;
   width: 500px;
   margin: 40px auto;
   font: 25px Arial,monospace;
 }
 #title{
-  display: inline-block;
   width: 1000px;
   margin: 10px auto;
   font: 40px Helvetica,monospace;
 }
 #name{
-  display: inline-block;
   width: 700px;
   margin: 10px auto;
   font: 60px Lucida Console,monospace;
