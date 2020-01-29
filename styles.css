@@ -4,12 +4,12 @@
 }
 
 p {
-  display: inline;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
 #desc {
+  
   width: 500px;
   margin: 40px auto;
   font: 25px Arial,monospace;
