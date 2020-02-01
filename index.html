@@ -1,17 +1,181 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>BRIJ SHAH</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+	<script>
+		function search(input){
+        	window.open(input);
+        	window.focus();
+    	}
+    	function printGitHub() {
+    		document.getElementById("d1").innerHTML = "This button will take you to my GitHub Page, which contains all of my Projects! Click the Button to be redirected!!->     " + "<input type = 'button' id='b2'  onclick = search('https://github.com/bshah016/CS_Projects') value = 'Go to GitHub!!' class = 'button button2'></input>";
+    	}
+    	function printLinkedIn() {
+    		document.getElementById("d2").innerHTML = "This button will take you to my LinkedIn, where you can see my Experience! Click the Button to be redirected!!->     " + "<input type = 'button' id='b4'  onclick = search('https://www.linkedin.com/in/brijshahdotcpp/') value = 'Go to my LinkedIn!!' class = 'button button4'></input>";
+    	}
+    	function download(file, text) { 
+  
+                    //creating an invisible element 
+                    var element = document.createElement('a'); 
+                    element.setAttribute('href', 'data:text/plain;charset=utf-8, ' 
+                                         + encodeURIComponent(text)); 
+                    element.setAttribute('download', file); 
+  
+                    //the above code is equivalent to 
+                    // <a href="path of file" download="file name"> 
+  
+                    document.body.appendChild(element); 
+  
+                    //onClick property 
+                    element.click(); 
+  
+                    document.body.removeChild(element); 
+                } 
+  
+                // Start file download. 
+                document.getElementById("btn").addEventListener("click", function() { 
+                    // Generate download of hello.txt file with some content 
+                    var text = document.getElementById("text").value; 
+                    var filename = "Resume1.finale.pdf"; 
+  
+                    download(filename, text); 
+                }, true); 
 
-<body>
+    
+	</script>
+	<style>
+		body {
+			background-color: gray;
+		}
+		#name {
+			font-size: 70px;
+			font-weight: bold;
+			font-family: monospace;
+			color: skyblue;
+			line-height: 1%;
+		}
+		#title {
+			font-size: 50px;
+			font-weight: normal;
+			color: lightseagreen;
+			font-family: monospace;
+			line-height: 30%;
+		}
+		#desc {
+			font-size: 40px;
+			font-weight: normal;
+			color: thistle;
+			font-family: monospace;
+			line-height: 30%;
+		}
+		.button {
+			background-color: #4CAF50; 
+  			border: none;
+  			color: white;
+  			padding: 4px 8px; 
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 13px; 
+  			margin: 4px 2px;
+  			-webkit-transition-duration: 0.4s;
+  			transition-duration: 0.4s;
+  			cursor: pointer;
+  			font-family: monospace;
+		}
+		.button1 {
+  		background-color: cadetblue; 
+  		font-weight: bold;
+  		color: cornflowerblue; 
+  		 border: 2px solid #008CBA;
+		}
 
-  <p id = "name"> GitHib Website of </p>
-  <p id = "name">Brij Shah: </p>
-  <p id = "desc"> Computer Science Student at UC Riverside </p>
+		.button1:hover {
+		  background-color: #008CBA;
+		  color: thistle;
+		  font-color: thistle;
+		}
 
-</body>
+		.button2 {
+		  background-color: grey; 
+		  color: black; 
+		  font-weight: bold;
+  		color: cornsilk; 
+		  border: 2px solid #008CBA;
+		}
+
+		.button2:hover {
+		  background-color: #008CBA;
+		  color: thistle;
+		  font-color: thistle;
+		}
+
+		.button3 {
+		  background-color: cadetblue; 
+  		font-weight: bold;
+  		color: cornflowerblue; 
+  		 border: 2px solid #008CBA;
+		}
+
+		.button3:hover {
+		  background-color: #008CBA;
+		  color: thistle;
+		  font-color: thistle;
+		}
+
+		.button4 {
+		  background-color: grey; 
+  		font-weight: bold;
+  		color: cornsilk; 
+  		 border: 2px solid #008CBA;
+		}
+
+		.button4:hover {
+		    background-color: #008CBA;
+		  color: black;
+		  font-color: white;
+		    }
+
+		.button5 {
+		  background-color: cadetblue; 
+  		font-weight: bold;
+  		color: cornflowerblue; 
+  		 border: 2px solid #008CBA;
+		}
+
+		.button5:hover {
+		  background-color: #008CBA;
+		  color: black;
+		  font-color: white;
+		}
+		#d1 {
+			font-family: monospace;
+			font-weight: bold;
+			font-size: 20px;
+			color: cornsilk;
+		}
+		#d2 {
+			font-family: monospace;
+			font-weight: bold;
+			font-size: 20px;
+			color: cornsilk;
+		}
+
+	</style>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  		<title>BRIJ SHAH</title>
+	</head>
+	<body>
+		<p id = "name" align = "center"> Brij Shah </p>
+		<!--<p id = "title" align = "center"> My First Website </p>-->
+		<p id = "desc" align = "center">Computer Science Student at UC Riverside </p>
+		<a href = "www.google.com"></a>
+		<input type = "button" id="b1"  onclick = "printGitHub()" value = "GitHub" class = "button button1"></input>
+		<div id="d1"></div>
+		<input type = "button" id="b3"  onclick = "printLinkedIn()" value = "LinkedIn" class = "button button3"></input>
+		<div id="d2"></div>
+		<input type = "button" id="b6"  onclick = "window.open('resume1.finale.pdf')" value = "Resume" class = "button button6"></input>
+		<div id="d2"></div>
+		
+
+	</body>
 </html>
