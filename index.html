@@ -11,6 +11,9 @@
     	function printLinkedIn() {
     		document.getElementById("d2").innerHTML = "This button will take you to my LinkedIn, where you can see my Experience! Click the Button to be redirected!!->     " + "<input type = 'button' id='b4'  onclick = search('https://www.linkedin.com/in/brijshahdotcpp/') value = 'Go to my LinkedIn!!' class = 'button button4'></input>";
     	}
+    	function printResume() {
+    		document.getElementById("d3").innerHTML = "This button will take you to my Resumé, where you can see my Experience! Click the Button to be redirected!!->     " + "<input type = 'button' id='b7'  onclick = search('https://drive.google.com/file/d/1BX6cruAmnsGgOIbOOmPiOuMBkKeMqd1D/view?usp=sharing') value = 'Go to my Resumé!!' class = 'button button7'></input>";
+    	}
     	function download(file, text) { 
   
                     //creating an invisible element 
@@ -84,7 +87,7 @@
 		.button1 {
   		background-color: cadetblue; 
   		font-weight: bold;
-  		color: cornflowerblue; 
+  		color: darkslateblue; 
   		 border: 2px solid #008CBA;
 		}
 
@@ -111,7 +114,7 @@
 		.button3 {
 		  background-color: cadetblue; 
   		font-weight: bold;
-  		color: cornflowerblue; 
+  		color: darkslateblue; 
   		 border: 2px solid #008CBA;
 		}
 
@@ -130,20 +133,44 @@
 
 		.button4:hover {
 		    background-color: #008CBA;
-		  color: black;
+		  color: thistle;
 		  font-color: white;
 		    }
 
 		.button5 {
 		  background-color: cadetblue; 
   		font-weight: bold;
-  		color: cornflowerblue; 
+  		color: darkslateblue; 
   		 border: 2px solid #008CBA;
 		}
 
 		.button5:hover {
 		  background-color: #008CBA;
-		  color: black;
+		  color: thistle;
+		  font-color: white;
+		}
+		.button6 {
+		  background-color: cadetblue; 
+  		font-weight: bold;
+  		color: darkslateblue; 
+  		 border: 2px solid #008CBA;
+		}
+
+		.button6:hover {
+		  background-color: #008CBA;
+		  color: thistle;
+		  font-color: white;
+		}
+		.button7 {
+		  background-color: grey; 
+  		font-weight: bold;
+  		color: cornsilk; 
+  		 border: 2px solid #008CBA;
+		}
+
+		.button7:hover {
+		  background-color: #008CBA;
+		  color: thistle;
 		  font-color: white;
 		}
 		#d1 {
@@ -153,6 +180,12 @@
 			color: cornsilk;
 		}
 		#d2 {
+			font-family: monospace;
+			font-weight: bold;
+			font-size: 20px;
+			color: cornsilk;
+		}
+		#d3 {
 			font-family: monospace;
 			font-weight: bold;
 			font-size: 20px;
@@ -173,8 +206,8 @@
 		<div id="d1"></div>
 		<input type = "button" id="b3"  onclick = "printLinkedIn()" value = "LinkedIn" class = "button button3"></input>
 		<div id="d2"></div>
-		<input type = "button" id="b6"  onclick = "window.open('resume1.finale.pdf')" value = "Resume" class = "button button6"></input>
-		<div id="d2"></div>
+		<input type = "button" id="b6"  onclick = "printResume()" value = "Resumé" class = "button button6"></input>
+		<div id="d3"></div>
 		
 
 	</body>
