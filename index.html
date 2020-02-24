@@ -1,215 +1,497 @@
 <!DOCTYPE html>
-<html>
-	<script>
-		function search(input){
-        	window.open(input);
-        	window.focus();
-    	}
-    	function printGitHub() {
-    		document.getElementById("d1").innerHTML = "This button will take you to my GitHub Page, which contains all of my Projects! Click the Button to be redirected!!->     " + "<input type = 'button' id='b2'  onclick = search('https://github.com/bshah016/CS_Projects') value = 'Go to GitHub!!' class = 'button button2'></input>";
-    	}
-    	function printLinkedIn() {
-    		document.getElementById("d2").innerHTML = "This button will take you to my LinkedIn, where you can see my Experience! Click the Button to be redirected!!->     " + "<input type = 'button' id='b4'  onclick = search('https://www.linkedin.com/in/brijshahdotcpp/') value = 'Go to my LinkedIn!!' class = 'button button4'></input>";
-    	}
-    	function printResume() {
-    		document.getElementById("d3").innerHTML = "This button will take you to my Resumé, where you can see my Experience! Click the Button to be redirected!!->     " + "<input type = 'button' id='b7'  onclick = search('https://drive.google.com/file/d/1pX_XquWhTwibwIUsdlpNUjOS2QdAog9w/view?usp=sharing') value = 'Go to my Resumé!!' class = 'button button7'></input>";
-    	}
-    	function download(file, text) { 
+<style>
+
+#page-top {
+  background-color: black;
+}
+
+#name {
+    font-size: 6rem;
+    line-height: 5.5rem;
+    color: darkgrey;
+}
+#links {
+  text-align: center;
+  margin-left: 9.5rem;
+  font-weight: 900;
+  font-size: 2rem;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#utitle {
+  text-align: center;
+  margin-right: 2rem;
+  text-decoration: underline;
+  font-weight: 900;
+  color: grey;
+
+}
+#center {
+    font-weight: 900;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    top: 100;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+    color: grey;
+    
+}
+#sideNav {
+  background-color: lightblue;
+  border: .5rem solid rgba(255, 255, 255, .6);
+
+}
+#occupation {
+  font-weight: 600;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 45px;
+    color: grey;
+}
+#school {
+  font-weight: 600;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 30px;
+    color: grey;
+
+}
+#name {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #737373;
+  color: grey;
+}
+#bio1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#bio2 {
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#codenation {
+  font-size: 40px;
+  font-weight: 400;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#codenation_school {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+#codenation_bio {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+
+}
+#codenation_date {
+  font-size: 15px;
+  font-weight: 400;
+  color: #BD5D38;
+  min-width: 12rem;
+  float: right;
+}
+#cutie {
+  font-size: 40px;
+  font-weight: 400;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#cutie_school {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+#cutie_bio {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+}
+#cutie_date {
+  font-size: 15px;
+  font-weight: 400;
+  color: #BD5D38;
+  min-width: 12rem;
+  float: right;
+}
+#mlh {
+  font-size: 40px;
+  font-weight: 400;
+  color: grey;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+#mlh_school {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+#mlh_bio {
+  font-size: 18px;
+  font-weight: 200;
+  color: grey;
+}
+#mlh_date {
+  font-size: 15px;
+  font-weight: 400;
+  color: #BD5D38;
+  min-width: 12rem;
+  float: right;
+}
+#xp {
+  padding-top: 2rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem;
+    min-height: 100vh;
+    padding-left: 2rem!important;
+    color: grey;    
+}
+#pp {
+  padding-top: 2rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem;
+    min-height: 100vh;
+    padding-left: 2rem!important;
+    color: grey;    
+}
+#edu {
+  padding-top: 2rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem;
+    min-height: 100vh;
+    padding-left: 2rem!important;
+    color: grey;
+    font-family: "Lucida Console", Monaco, monospace;
+    
+}
+#social-icons {
+
+}
+#social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #0af;
+    color: #fff!important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+#social-icons a:last-child {
+    margin-right: auto;
+}
+#social-icons a:hover {
+    background-color: #83b9ff;
+}
+@media (min-width:992px) {
+    body {
+    padding-top: 0;
+    padding-left: 17rem;
+} 
+}
+
+
+
+
+
+
+    #side {
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+    #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 17rem;
+    height: 100vh;
+}
+</style>
+<head>
+  <title>BRIJ SHAH</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav id="sideNav">
+    <a href="#page-top">
+      <span class="d-block d-lg-none">Brij Shah</span>
+      <span class="d-none d-lg-block">
+      	<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="Profile Picture">
+      	<br>
+        <img class="img-fluid" src="images/logo.png" >
+        <br>
+        
+      </span>
+    </a>
+    </button>
+    <div id = "side">
+    	<ul>
+    		<br>
+    		<br>
+    		<a id = "utitle" href="#page-top">SECTIONS</a>
+    	<br>
+    	<br>
+    	<a id = "center" href="#exp">Experience</a>
+    	<br>
+    	<br>
+    	<a id = "center" href="#pp">Personal Projects</a>
+    	<br>
+    	<br>
+    	<a id = "center" href="#edu">Education</a>
+    	<br>
+    	<br>
+    	<a id = "center" href="#about">About</a>
+    	<br>
+    	<br>
+    	</ul>
+    	
+
+
+    	<!--
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+  </nav>
+
+  <div class="container-fluid p-0" style="background-image: url('images/bodyback2.png')">
+	
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about" >
+    	<div id = "img">
+    	<a name = "about" ></a>
+      <div class="w-100" >
+        <h1 id = "name">Brij Shah</h1>
+    	</br>
+        <div id="occupation">Computer Science Student</div>
+        <div id = "school">University of California, Riverside</div>
+        <br>
+        <br>
+        <!--
+        <p id = "bio1">About Me:</p>
+        <p id = "bio2">Enter bio2 here</p> -->
+        <br>
+        <br>
+        <!--comment these out-->
+         <br>
+        <br>
+         <br>
+        <br>
+        
+      
+      <!--<div id="links">LINKS</div>-->
   
-                    //creating an invisible element 
-                    var element = document.createElement('a'); 
-                    element.setAttribute('href', 'data:text/plain;charset=utf-8, ' 
-                                         + encodeURIComponent(text)); 
-                    element.setAttribute('download', file); 
-  
-                    //the above code is equivalent to 
-                    // <a href="path of file" download="file name"> 
-  
-                    document.body.appendChild(element); 
-  
-                    //onClick property 
-                    element.click(); 
-  
-                    document.body.removeChild(element); 
-                } 
-  
-                // Start file download. 
-                document.getElementById("btn").addEventListener("click", function() { 
-                    // Generate download of hello.txt file with some content 
-                    var text = document.getElementById("text").value; 
-                    var filename = "Resume1.finale.pdf"; 
-  
-                    download(filename, text); 
-                }, true); 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="links">LINKS</div>
+    <br>
+
+    <div id="social-icons">
+          <a target="_blank" href="https://linkedin.com/in/brijshahdotcpp">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a target="_blank" href="https://github.com/bshah016/CS_Projects">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="mailto:brijshah717@gmail.com">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+        </div>
+        </div>
+        <br>
+    <br>
+
+        </section>
+
 
     
-	</script>
-	<style>
-		body {
-			background-color: gray;
-		}
-		#name {
-			font-size: 70px;
-			font-weight: bold;
-			font-family: monospace;
-			color: skyblue;
-			line-height: 1%;
-		}
-		#title {
-			font-size: 50px;
-			font-weight: normal;
-			color: lightseagreen;
-			font-family: monospace;
-			line-height: 30%;
-		}
-		#desc {
-			font-size: 40px;
-			font-weight: normal;
-			color: thistle;
-			font-family: monospace;
-			line-height: 30%;
-		}
-		.button {
-			background-color: #4CAF50; 
-  			border: none;
-  			color: white;
-  			padding: 4px 8px; 
-  			text-align: center;
-  			text-decoration: none;
-  			display: inline-block;
-  			font-size: 13px; 
-  			margin: 4px 2px;
-  			-webkit-transition-duration: 0.4s;
-  			transition-duration: 0.4s;
-  			cursor: pointer;
-  			font-family: monospace;
-		}
-		.button1 {
-  		background-color: cadetblue; 
-  		font-weight: bold;
-  		color: darkslateblue; 
-  		 border: 2px solid #008CBA;
-		}
 
-		.button1:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: thistle;
-		}
+    <section id="xp">
+    	<a name = "exp"></a>
+      <div>
+        <h2 >Experience</h2>
+        <br>
+        <br>
+        <div>
+          <div>
+            <h3 id = "codenation">CodeNation</h3>
+            <div id = "codenation_school"><a target = "blank_" href="http://dev.nphs.org/">Newbury Park High School</a>
+            <span id = "codenation_date">August 2015 - June 2019</span>
+            </div>
+            <p id = "codenation_bio">
+              A program that provided elementary middle school students with the skills and experience to be proficient in various coding languages, which would eventually lead to a career in technology. Was a lead tutor for the team that taught HTML, CSS, and JavaScript. I learned many valuable skills from this position such as how to be patient while teaching inexperienced students, how to talk to large groups of people, how to effectively teach in a way that every individual understands, and how to collaborate effectively.
+            </p>
+          </div>
+          
+            
+          
+        </div>
+        <br>
+        <div>
+          <div>
+            <h3 id = "cutie">Cutie Hack</h3>
+            <div id = "cutie_school"><a target="_blank" href="https://cutiehack.io/#/">UC Riverside</a>
+            </div>
+            <p id = "cutie_bio">
+              UCR hackathon where I created a travel itinerary. Project was coded in Java. Implemented classes and functions. Had to test for every case possible to make sure there were no circumstances in which the user did not get a result.
+            </p>
+        </div>
 
-		.button2 {
-		  background-color: grey; 
-		  color: black; 
-		  font-weight: bold;
-  		color: cornsilk; 
-		  border: 2px solid #008CBA;
-		}
+        <br>
+        <div>
+          <div>
+            <h3 id = "mlh">UCR Programming Competition 2020</h3>
+            <div id = "mlh_school"><a target="_blank" href="https://localhackday.mlh.io/">UC Riverside</a></div>
+            <p id ="mlh_bio">
+            	School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. Placed 15th place out of 40 teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointer, linked lists and much more. Learned how to better communicate with a stranger-group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. 
+          </p>
+          </div>
+        </div>
 
-		.button2:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: thistle;
-		}
 
-		.button3 {
-		  background-color: cadetblue; 
-  		font-weight: bold;
-  		color: darkslateblue; 
-  		 border: 2px solid #008CBA;
-		}
 
-		.button3:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: thistle;
-		}
+      </div>
+      	<br>
+    <br>
+    </section>
+    
+    <section id="pp">
+    	<a name = "exp"></a>
+      <div>
+        <h2 >Personal Projects</h2>
+        <br>
+        <br>
+        <div>
+          <div>
+            <h3 id = "ttt">Tic Tac Toe</h3>
+            <div id = "ttt_school"><a target = "blank_" href="http://dev.nphs.org/">UC Riverside</a>
+            </div>
+            <p id = "ttt_bio">
+              
+            </p>
+          </div>
+          
+            
+          
+        </div>
+        <br>
+        <div>
+          <div>
+            <h3 id = "cr">Cash Register</h3>
+            <div id = "cr_school"><a target="_blank" href="https://cutiehack.io/#/">UC Riverside</a>
+            </div>
+            <p id = "cr_bio">
+              
+            </p>
+        </div>
 
-		.button4 {
-		  background-color: grey; 
-  		font-weight: bold;
-  		color: cornsilk; 
-  		 border: 2px solid #008CBA;
-		}
+        <br>
+        <div>
+          <div>
+            <h3 id = "CarPages">CarPages</h3>
+            <div id = "cp_school"><a target="_blank" href="https://localhackday.mlh.io/">Newbury Park High School</a></div>
+            <p id ="cp_bio">
+            
+          </p>
+          </div>
+        </div>
 
-		.button4:hover {
-		    background-color: #008CBA;
-		  color: thistle;
-		  font-color: white;
-		    }
 
-		.button5 {
-		  background-color: cadetblue; 
-  		font-weight: bold;
-  		color: darkslateblue; 
-  		 border: 2px solid #008CBA;
-		}
 
-		.button5:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: white;
-		}
-		.button6 {
-		  background-color: cadetblue; 
-  		font-weight: bold;
-  		color: darkslateblue; 
-  		 border: 2px solid #008CBA;
-		}
+      </div>
 
-		.button6:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: white;
-		}
-		.button7 {
-		  background-color: grey; 
-  		font-weight: bold;
-  		color: cornsilk; 
-  		 border: 2px solid #008CBA;
-		}
+    </section>
 
-		.button7:hover {
-		  background-color: #008CBA;
-		  color: thistle;
-		  font-color: white;
-		}
-		#d1 {
-			font-family: monospace;
-			font-weight: bold;
-			font-size: 20px;
-			color: cornsilk;
-		}
-		#d2 {
-			font-family: monospace;
-			font-weight: bold;
-			font-size: 20px;
-			color: cornsilk;
-		}
-		#d3 {
-			font-family: monospace;
-			font-weight: bold;
-			font-size: 20px;
-			color: cornsilk;
-		}
 
-	</style>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  		<title>BRIJ SHAH</title>
-	</head>
-	<body>
-		<p id = "name" align = "center"> Brij Shah </p>
-		<!--<p id = "title" align = "center"> My First Website </p>-->
-		<p id = "desc" align = "center">Computer Science Student at UC Riverside </p>
-		<a href = "www.google.com"></a>
-		<input type = "button" id="b1"  onclick = "printGitHub()" value = "GitHub" class = "button button1"></input>
-		<div id="d1"></div>
-		<input type = "button" id="b3"  onclick = "printLinkedIn()" value = "LinkedIn" class = "button button3"></input>
-		<div id="d2"></div>
-		<input type = "button" id="b6"  onclick = "printResume()" value = "Resumé" class = "button button6"></input>
-		<div id="d3"></div>
-		<!--<img src = "images/create-octocat.png"/> -->
-		
 
-	</body>
+
+    
+    <a name = "edu"></a>
+    <section id="edu">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">University of California Riverside</h3>
+            <div class="subheading mb-3">Bachelor's of Science in Computer Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2019 - June 2023 (Expected)</span>
+          </div>
+        </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Newbury Park High School</h3>
+            <div class="subheading mb-3">High School Diploma</div>
+            <div>Pursued Academia for Four Years to Obtain a High School Diploma</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2015 - December 2019</span>
+          </div>
+        </div>
+
+        
+        
+    </section>
+
+
+  </div>
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
 </html>
