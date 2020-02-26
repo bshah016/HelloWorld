@@ -51,21 +51,20 @@
 }
 #occupation {
   font-weight: 600;
-    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: Saira Extra Condensed;
     font-size: 45px;
     color: grey;
 }
 #school {
   font-weight: 600;
-    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: Saira Extra Condensed;
     font-size: 30px;
     color: grey;
 
 }
 #name {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Lucida Console", Monaco, monospace; 
   color: #737373;
   color: grey;
 }
@@ -79,6 +78,31 @@
   color: grey;
   font-family: "Lucida Console", Monaco, monospace;
 }
+
+#codenation_date {
+	font-size: 15px;
+  font-weight: 600;
+  color: violet;
+  min-width: 12rem;
+  float: right;
+}
+#cutie_date {
+  font-size: 15px;
+  font-weight: 600;
+  color: violet;
+  min-width: 10rem;
+  float: right;
+}
+#mlh_date {
+  font-size: 15px;
+  font-weight: 600;
+  color: violet;
+  min-width: 10rem;
+  float: right;
+  font-style: bold;
+} 
+/*#BD5D38*/
+/*
 #codenation {
   font-size: 40px;
   font-weight: 400;
@@ -95,14 +119,8 @@
   font-weight: 200;
   color: grey;
 
-}
-#codenation_date {
-  font-size: 15px;
-  font-weight: 400;
-  color: #BD5D38;
-  min-width: 12rem;
-  float: right;
-}
+} 
+
 #cutie {
   font-size: 40px;
   font-weight: 400;
@@ -118,14 +136,8 @@
   font-size: 18px;
   font-weight: 200;
   color: grey;
-}
-#cutie_date {
-  font-size: 15px;
-  font-weight: 400;
-  color: #BD5D38;
-  min-width: 12rem;
-  float: right;
-}
+} 
+
 #mlh {
   font-size: 40px;
   font-weight: 400;
@@ -141,14 +153,8 @@
   font-size: 18px;
   font-weight: 200;
   color: grey;
-}
-#mlh_date {
-  font-size: 15px;
-  font-weight: 400;
-  color: #BD5D38;
-  min-width: 12rem;
-  float: right;
-}
+} 
+*/
 #xp {
   padding-top: 2rem!important;
     padding-bottom: 5rem!important;
@@ -156,6 +162,7 @@
     min-height: 100vh;
     padding-left: 2rem!important;
     color: grey;    
+    font-weight: 450;
 }
 #pp {
   padding-top: 2rem!important;
@@ -164,6 +171,7 @@
     min-height: 100vh;
     padding-left: 2rem!important;
     color: grey;    
+    font-weight: 450;
 }
 #edu {
   padding-top: 2rem!important;
@@ -172,8 +180,10 @@
     min-height: 100vh;
     padding-left: 2rem!important;
     color: grey;
+    font-weight: 450;
+    /*
     font-family: "Lucida Console", Monaco, monospace;
-    
+    */
 }
 #social-icons {
 
@@ -191,12 +201,15 @@
     margin-right: 10rem;
     margin-left: 10rem;
     margin-bottom: 2rem;
+    -webkit-transition-duration: 0.5s;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 #social-icons a:last-child {
     margin-right: auto;
 }
 #social-icons a:hover {
-    background-color: #83b9ff;
+    background-color: #ff775e;
 }
 @media (min-width:992px) {
     body {
@@ -221,10 +234,14 @@
     width: 17rem;
     height: 100vh;
 }
+#thing {
+	padding-right: 10px;
+	padding-left: 310px;
+}
 </style>
 <head>
   <title>BRIJ SHAH</title>
-  <link rel="icon" type="images" href="logo.png">
+  <link rel="icon" type="images" href="/logo.png">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -242,7 +259,7 @@
 <body id="page-top">
   <nav id="sideNav">
     <a href="#page-top">
-      <span class="d-block d-lg-none">Brij Shah</span>
+      <span class="d-block d-lg-none" >Brij Shah</span>
       <span class="d-none d-lg-block">
       	<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="Profile Picture">
       	<br>
@@ -253,7 +270,6 @@
     </button>
     <div id = "side">
     	<ul>
-    		<br>
     		<br>
     		<a id = "utitle" href="#page-top">SECTIONS</a>
     	<br>
@@ -300,10 +316,10 @@
     	<div id = "img">
     	<a name = "about" ></a>
       <div class="w-100" >
-        <h1 id = "name">Brij Shah</h1>
+        <h1 id = "name" style = "color: cadetblue">Brij Shah</h1>
     	</br>
-        <div id="occupation">Computer Science Student</div>
-        <div id = "school">University of California, Riverside</div>
+        <div id="occupation" style = "color: gold">Computer Science Student</div>
+        <div id = "school" style = "color: steelblue">University of California, Riverside</div>
         <br>
         <br>
         <!--
@@ -325,7 +341,7 @@
     <br>
     <br>
     <br>
-    <div id="links">LINKS</div>
+    <div id="links" style = "color: #ff775e">LINKS</div>
     <br>
 
     <div id="social-icons">
@@ -352,16 +368,16 @@
     <section id="xp">
     	<a name = "exp"></a>
       <div>
-        <h2>Experience</h2>
+        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Experience</a></h2>
         <br>
         <br>
         <div>
           <div>
-            <h3 id = "codenation">CodeNation</h3>
-            <div id = "codenation_school"><a target = "blank_" href="http://dev.nphs.org/">Newbury Park High School</a>
-            <span id = "codenation_date">August 2015 - June 2019</span>
+            <h3 id = "codenation" style = "color: #66FCF1">CodeNation</h3>
+            <div id = "codenation_school" ><a target = "blank_" href="http://dev.nphs.org/">Newbury Park High School</a>
+            <span id = "codenation_date" >August 2015 - June 2019</span>
             </div>
-            <p id = "codenation_bio">
+            <p id = "codenation_bio" style = "color: #45A29E; font-weight: 600">
               A program that provided elementary middle school students with the skills and experience to be proficient in various coding languages, which would eventually lead to a career in technology. Was a lead tutor for the team that taught HTML, CSS, and JavaScript. I learned many valuable skills from this position such as how to be patient while teaching inexperienced students, how to talk to large groups of people, how to effectively teach in a way that every individual understands, and how to collaborate effectively.
             </p>
           </div>
@@ -372,10 +388,11 @@
         <br>
         <div>
           <div>
-            <h3 id = "cutie">Cutie Hack</h3>
+            <h3 id = "cutie" style = "color: #66FCF1">Cutie Hack</h3>
             <div id = "cutie_school"><a target="_blank" href="https://cutiehack.io/#/">UC Riverside</a>
+            	<span id = "cutie_date">November 9, 2019</span>
             </div>
-            <p id = "cutie_bio">
+            <p id = "cutie_bio" style = "color: #45A29E; font-weight: 600">
               UCR hackathon where I created a travel itinerary. Project was coded in Java. Implemented classes and functions. Had to test for every case possible to make sure there were no circumstances in which the user did not get a result.
             </p>
         </div>
@@ -383,9 +400,11 @@
         <br>
         <div>
           <div>
-            <h3 id = "mlh">UCR Programming Competition 2020</h3>
-            <div id = "mlh_school"><a target="_blank" href="https://ucrpc.net/">UC Riverside</a></div>
-            <p id ="mlh_bio">
+            <h3 id = "mlh" style = "color: #66FCF1">UCR Programming Competition 2020</h3>
+            <div id = "mlh_school"><a target="_blank" href="https://ucrpc.net/">UC Riverside</a>
+            	<span id = "mlh_date">February 22, 2020</span>
+            </div>
+            <p id ="mlh_bio" style = "color: #45A29E; font-weight: 600">
             	School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. Placed 15th place out of 40 teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointer, linked lists and much more. Learned how to better communicate with a stranger-group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. 
           </p>
           </div>
@@ -401,47 +420,46 @@
     <section id="pp">
     	<a name = "exp"></a>
       <div>
-        <h2 >Personal Projects</h2>
+        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Personal Projects</a></h2>
         <br>
         <br>
         <div>
           <div>
-            <h3 id = "ttt">Tic Tac Toe</h3>
+            <h3 id = "ttt" style = "color: #66FCF1">Tic Tac Toe</h3>
             <div id = "ttt_school"><a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp">UC Riverside</a>
             </div>
-            <p id = "ttt_bio">
-              	Developed a local program that simulates playing a full Tic-Tac-Toe game in the terminal. Was originally a school assignment, but I changed it to make it unique. Using the fundamentals of C++, the program makes use of functions, vectors, pass by reference, basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. 
+            <p id = "ttt_bio" style = "color: #45A29E; font-weight: 600">
+              	Developed a local program that simulates playing a full Tic-Tac_Toe game in the terminal. Was originally a school assignment, but I changed it to make it unique. Using the fundamentals of C++, the program makes use of functions, vectors, pass by reference, basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. 
             </p>
           </div>
           
             
           
         </div>
-        <br>
         <div>
-            <h3 id = "ttt">Tree</h3>
+            <h3 id = "ttt" style = "color: #66FCF1">Tree</h3>
             <div id = "ttt_school"><a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/Arrow_Drawer.cpp">UC Riverside</a>
             </div>
-            <p id = "ttt_bio">
+            <p id = "ttt_bio" style = "color: #45A29E; font-weight: 600">
               	Developed a local program that draws a tree made of asteriks. Requires user input for the width and height of the trunk of the tree as well as the starting width of the leaves of the tree. This allows the user to customize their own tree. The program was implemented using the fundamentals of C++, such as basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. 
             </p>
           </div>
         <div>
           <div>
-            <h3 id = "CarPages">CarGest</h3>
+            <h3 id = "CarPages" style = "color: #66FCF1">CarGest</h3>
             <div id = "cp_school"><a target="_blank" href="http://dev.nphs.org/">Newbury Park High School</a></div>
-            <p id ="cp_bio">
+            <p id ="cp_bio" style = "color: #45A29E; font-weight: 600">
             Developed a local webpage using HTML, CSS, and JavaScript that lets the user sort their preferences for each car brand and also lets the user sort their preferences for more expensive car brands. Tells the user everything they need to know about a car brand they want to buy by directing the user to the car brands website. The user can select however many car brands they would like and the user can navigate to each brands website. Webpage also gives the user other options, and is very user-input based. 
           </p>
           </div>
         </div>
         <div>
           <div>
-            <h3 id = "cr">GeeGate</h3>
+            <h3 id = "cr" style = "color: #66FCF1">GeeGate</h3>
             <div id = "cr_school"><a target="_blank" href="http://dev.nphs.org/">Newbury Park High School</a>
             </div>
-            <p id = "cr_bio">
-              Developed a local webpage using HTML, CSS, and JavaScript that lets the user implement different filters to edit the colors of a set image and also lets the user alter the composition of the image. The user can mix and match different set filters to create a unqiue version of the image. 
+            <p id = "cr_bio" style = "color: #45A29E; font-weight: 600">
+              Developed a local webpage using HTML, CSS, and JavaScript that lets the user imlement different filters to edit the colors of a set image and also lets the user alter the composition of the image. The user can mix and match different set filters to create a unqiue version of the image. 
             </p>
         </div>
 
@@ -455,34 +473,36 @@
 
 
 
-
+<!--rosybrown-->
+<!--salmon-->
+<!--thistle-->
     
-    <a name = "edu"></a>
+    
     <section id="edu">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+      	<a name = "edu"></a>
+        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Education</a></h2>
+        <br>
+        <br>
+          <div  style = "float: left" style="display: inline-block">
+            <h3><a target = "_blank" href = "https://www1.cs.ucr.edu/" style = "color: #66FCF1">University of California, Riverside</a></h3>
+           
+            <span style = "color: #45A29E; font-weight: 600">September 2019 - June 2023 (Expected)</span>
+         
+            <div style = "color: #45A29E; font-weight: 600">Bachelor's of Science in Computer Science</div>
+          </div>
+          
+        
+        
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a target = "_blank" href = "https://www1.cs.ucr.edu/">University of California, Riverside</a></h3>
-            <div class="subheading mb-3">Bachelor's of Science in Computer Science</div>
+        
+          <div id = "thing" style="display: inline-block">
+            <h3><a target = "_blank" href = "http://dev.nphs.org/" style = "color: #66FCF1">Newbury Park High School</a></h3>
+            <span style = "color: #45A29E; font-weight: 600">August 2015 - June 2019</span>
+            <div style = "color: #45A29E; font-weight: 600">High School Diploma</div>
+            
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - June 2023 (Expected)</span>
-          </div>
-        </div>
-
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a target = "_blank" href = "http://dev.nphs.org/">Newbury Park High School</a></h3>
-            <div class="subheading mb-3">High School Diploma</div>
-            <div>Pursued Academia for Four Years to Obtain a High School Diploma</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2015 - December 2019</span>
-          </div>
-        </div>
+     
 
         
         
