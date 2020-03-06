@@ -16,7 +16,7 @@
 }
 #links {
   text-align: center;
-  margin-left: 9.5rem;
+  margin-right: 1.5rem;
   font-weight: 900;
   font-size: 2rem;
   color: grey;
@@ -27,7 +27,7 @@
   margin-right: 2rem;
   text-decoration: underline;
   font-weight: 900;
-  color: grey;
+  color: #dfdfdf;
 
 }
 #center {
@@ -44,7 +44,7 @@
     flex-direction: column;
     width: 17rem;
     height: 100vh;
-    color: grey;
+    color: #dfdfdf;
     
 }
 #sideNav {
@@ -136,9 +136,7 @@
     font-family: "Lucida Console", Monaco, monospace;
     */
 }
-#social-icons {
 
-}
 #social-icons a {
     display: inline-block;
     height: 3.5rem;
@@ -184,11 +182,39 @@
     left: 0;
     width: 17rem;
     height: 100%;
+    background-image: linear-gradient(#000066, #33cccc);
+    border-color: #29a3a3;
+
 
 }
 #thing {
 	padding-right: 10px;
 	padding-left: 310px;
+}
+#name  {
+  color: limegreen;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /*margin: 0 auto; *//* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  text-align: left;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: limegreen }
 }
 </style>
 <head>
@@ -253,8 +279,8 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about" >
     	<div id = "img">
     	<a name = "about" ></a>
-      <div class="w-100" >
-        <h1 id = "name" style = "color: cadetblue">Brij Shah</h1>
+      <div class="w-100"id="firstandlast">
+        <h1 id = "name" style = "color: limegreen">>_[Brij Shah]........</h1>
     	</br>
         <div id="occupation" style = "color: gold">Computer Science Student</div>
         <div id = "school" style = "color: steelblue">University of California, Riverside</div>
@@ -284,7 +310,7 @@
 
     <div id="social-icons">
           <a target="_blank" href="https://linkedin.com/in/brijshahdotcpp">
-            <i class="fab fa-linkedin-in"></i>
+            <i id = "l" class="fab fa-linkedin-in"></i>
           </a>
           <a target="_blank" href="https://github.com/bshah016/CS_Projects">
             <i class="fab fa-github"></i>
@@ -305,8 +331,8 @@
 
     <section id="xp">
     	<a name = "exp"></a>
-      <div>
-        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Experience</a></h2>
+      <div id = xpp>
+        <h2 style = "border-bottom: double thick limegreen" ><a style = "color: limegreen; font-family: monospace">>Experience...</a></h2>
         <br>
         <br>
         <div>
@@ -316,7 +342,7 @@
             	<a target="_blank" href="https://ucrpc.net/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
             	UC Riverside
             	</a>
-            	<span id = "mlh_date">February 22, 2020</span>
+            	<span id = "mlh_date" style = "color: limegreen">February 22, 2020</span>
             </div>
             <p id ="mlh_bio" style = "color: #45A29E; font-weight: 600">
             	School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. My team and I placed 15th out of 40 total teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointers, linked lists, unit testing, and much more. All problems were coded in C++ and Python. Learned how to better communicate with a stranger group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. Practiced for weeks prior doing previous coding problems and dynamically updated my work ethic and work style.  
@@ -332,7 +358,7 @@
             <div id = "cutie_school">
             	<a target="_blank" href="https://cutiehack.io/#/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">UC Riverside
             	</a>
-            	<span id = "cutie_date">November 9, 2019</span>
+            	<span id = "cutie_date" style = "color: limegreen">November 9, 2019</span>
             </div>
             <p id = "cutie_bio" style = "color: #45A29E; font-weight: 600">
               School-wide hackathon where my team and I created a travel itinerary. Itinerary was coded in Java using the Eclipse IDE and GitHub. Implemented classes and functions. Had to test for every case possible to make sure there were no circumstances in which the user did not get a result. Also attended various workshops explaining various aspects of a career in Computer Science including Team Building, Introduction to Google API's, Introduction to Git, Introduction to Linux, How to Pitch your Project, and other various workshops that introduces students to other computer engineering fields.
@@ -346,7 +372,7 @@
             <div id = "codenation_school">
             	<a target = "blank_" href="http://dev.nphs.org/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">Newbury Park High School
             	</a>
-            <span id = "codenation_date" >August 2015 - June 2019</span>
+            <span id = "codenation_date" style = "color: limegreen">August 2015 - June 2019</span>
             </div>
             <p id = "codenation_bio" style = "color: #45A29E; font-weight: 600">
               A program that provided 100+ elementary middle school students with the skills and experience to be proficient in various coding languages, which would eventually lead to a career in technology at no cost. Was the lead tutor for the team that taught HTML, CSS, and JavaScript. I explained syntax, algorithms, and thought processes in terms that everyone would understand. I also learned many valuable skills from this position such as how to be polite and patient while teaching inexperienced students, how to talk to large groups of people, how to effectively teach in a way that every individual understands, and also how to collaborate effectively.
@@ -362,8 +388,8 @@
     
     <section id="pp">
     	<a name = "exp"></a>
-      <div>
-        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Personal Projects</a></h2>
+      <div id = "ppp">
+        <h2 style = "border-bottom: double thick limegreen"><a style = "color: limegreen; font-family: monospace"> >Personal Projects...</a></h2>
         <br>
         <br>
         <div>
@@ -437,7 +463,7 @@
     <section id="edu">
       <div class="w-100">
       	<a name = "edu"></a>
-        <h2 style = "border-bottom: double thick cornflowerblue"><a style = "color: violet">Education</a></h2>
+        <h2 style = "border-bottom: double thick limegreen"><a style = "color: limegreen; font-family: monospace">>Education...</a></h2>
         <br>
         <br>
           <div  style = "float: left" style="display: inline-block">
