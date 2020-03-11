@@ -18,11 +18,14 @@
 }
 #links {
   text-align: center;
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   font-weight: 900;
   font-size: 2rem;
-  color: grey;
+
+  color: limegreen;
   font-family: "Lucida Console", Monaco, monospace;
+  color: limegreen;
+  text-decoration: underline;
 }
 #utitle {
   text-align: center;
@@ -142,29 +145,30 @@
 
 #social-icons a {
     display: inline-block;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: #0af;
-    color: #fff!important;
-    border-radius: 100%;
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    margin-bottom: 2rem;
+    color: limegreen;
+    height: 4.5rem;
+    width: 4.5rem;
+    font-size: 3rem;
+    margin-right: 8rem;
+    margin-left: 11rem;
+    margin-bottom: 5rem;
+    border-radius: 30%; 
     -webkit-transition-duration: 0.5s;
 	transition-duration: 0.4s;
-	cursor: pointer;
+	background-opacity: 55%;
 }
 #social-icons a:last-child {
-    margin-right: auto;
+    margin-right: 8rem;
 }
+
 #social-icons a:hover {
-    background-color: #ff775e;
+    color: limegreen;
+    box-shadow: 0 0 10px limegreen, 0 0 40px #2ab489, 0 0 80px #2196f3;
 }
 @media (min-width:992px) {
     body {
+
     padding-top: 0;
     padding-left: 17rem;
 } 
@@ -238,9 +242,8 @@
 
 
 
-
-
 </style>
+
 <head>
   <title>BRIJ SHAH</title>
   <link rel="icon" type="images" href="/logo.png">
@@ -258,7 +261,11 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload = "myFunction()">
+	<div class = "loader-wrapper">
+		<span class = "loader"><span class = "loader-inner"></span></span>
+	</div>
+
   <nav id="sideNav">
     <a href="#page-top">
       
@@ -328,7 +335,9 @@
     <br>
     <br>
     <br>
-    <div id="links" style = "color: #ff775e">LINKS</div>
+    <div id="links" style = "color: limegreen"><!--LINKS--></div>
+    <br>
+    <br>
     <br>
 
     <div id="social-icons">
