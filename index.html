@@ -1,17 +1,14 @@
+
 <!DOCTYPE html>
-<script>
-	document.body.style.zoom="90%";
-</script>
+
 <style>
 
 #page-top {
   background-color: black;
-  background-attachment: fixed;
+
+
   
 
-}
-#about {
-	width: 50%;
 }
 #name {
     font-size: 6rem;
@@ -91,7 +88,7 @@
 }
 
 #codenation_date {
-	font-size: 15px;
+  font-size: 15px;
   font-weight: 600;
   color: violet;
   min-width: 12rem;
@@ -157,18 +154,18 @@
     margin-bottom: 5rem;
     border-radius: 30%; 
     -webkit-transition-duration: 0.5s;
-	transition-duration: 0.4s;
-	background-opacity: 55%;
+
+  box-shadow:inset 0 -3px 0 #89b9cc;
 }
 #social-icons a:last-child {
-    margin-right: 8rem;
+    margin-right: 6rem;
 }
 
 #social-icons a:hover {
     color: limegreen;
     box-shadow: 0 0 10px limegreen, 0 0 40px #2ab489, 0 0 80px #2196f3;
 }
-@media (min-width:992px) {
+@media (min-width:500px) {
     body {
 
     padding-top: 0;
@@ -198,8 +195,8 @@
 
 }
 #thing {
-	padding-right: 10px;
-	padding-left: 310px;
+  padding-right: 10px;
+  padding-left: 310px;
 }
 #name  {
   color: limegreen;
@@ -223,13 +220,13 @@
 @keyframes typing {
 
   from { width: 0 }
-  to { width: 100% }
+  to { width: 80% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: limegreen }
+  50% { border-color: turquoise }
 }
 
 #page-top {
@@ -251,7 +248,7 @@
   font-size: 18px;
   color: #0fbcf9;
   font-weight: 700;
-  text-transform: uppercase;
+  color: springgreen;
   margin: 20px 0;
 }
 
@@ -263,7 +260,7 @@
 
 .skill-per{
   height: 20px;
-  background-color: limegreen;
+  background-color: turquoise;
   border-radius: 8px;
   width: 0;
   transition: 1s linear;
@@ -274,9 +271,11 @@
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
-  background-color: #0fbcf9;
+  background-color: turquoise;
   color: black;
   font-size: 12px;
+  font-weight: 2rem;
+  color: darkblue;
   border-radius: 4px;
   top: -35px;
   right: 0;
@@ -288,11 +287,101 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #0fbcf9;
+  background-color: turquoise;
   top: -16px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
+}
+.skillsex .skillz__category__label{
+
+  font-weight:700;
+  color: #66FCF1;
+  text-transform:uppercase;
+text-decoration: underline;
+
+}
+
+
+.skillsex {
+  padding-top: 2rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem;
+    min-height: 100vh;
+    padding-left: 2rem!important;
+    color: #45A29E;    
+    font-weight: 450;
+}
+
+  #arrow {
+    color: springgreen;
+    display: inline-block;
+    font-size: 6rem;
+  }
+  #arrow2 {
+    font-size: 45px;
+  }
+
+.project__used__item{
+    display:inline-block;
+    margin:3px 3px 3px 0;
+    font-family:monospace;
+    font-size:1rem;
+    font-weight:700;
+    padding:2px 7px;
+    border-radius:5px;
+    color:#4da3ff;
+    border:1px solid #61892f;
+    background:0 0;
+}
+
+#bak {
+  padding-top: 2rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem;
+    min-height: 100vh;
+    padding-left: 2rem!important;
+    color: #45A29E;   
+    font-weight: 600;
+    font-size: 18px;
+}
+.res{
+  text-align: center;
+  font-size: 30px;
+
+
+
+}
+.res a{
+  color: #66FCF1;
+  padding: 5px 20px;
+  border: 2px solid #4da3ff;
+  border-radius:15px;
+}
+.res a:hover{
+  
+  opacity: 50%;
+
+}
+  
+.highlight-link {
+
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  font-weight:400;
+  text-decoration:none;
+  display:inline-block;
+  padding:2px 3px;
+  text-decoration:none;
+  -webkit-box-shadow:inset 0 -3px 0 limegreen;
+  box-shadow:inset 0 -3px 0 ;
+
+}
+.highlight-link:hover {
+
+  -webkit-box-shadow:inset 0 -33px 0 0 ;
+  box-shadow:inset 0 33px 0 0 black;
+
 }
 
 
@@ -313,65 +402,79 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162710947-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162710947-1');
+</script>
+
+
 </head>
 
 <body id="page-top" onload = "myFunction()">
-	<div class = "loader-wrapper">
-		<span class = "loader"><span class = "loader-inner"></span></span>
-	</div>
+  <div class = "loader-wrapper">
+    <span class = "loader"><span class = "loader-inner"></span></span>
+  </div>
 
   <nav id="sideNav">
     <a href="#page-top">
       
       
-      	<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="Profile Picture">
-      	<br>
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile.jpg" alt="Profile Picture">
+        <br>
         
 
     </a>
     </button>
     <div id = "side">
-    	<ul>
-    		<br>
-    		<a id = "utitle" style = "font-size: 18px; color: white">SECTIONS</a>
-    	<br>
-    	<br>
-    	<a id = "center" href="#xp">Experience</a>
-    	<br>
-    	<br>
-    	<a id = "center" href="#pp">Personal Projects</a>
-    	<br>
-    	<br>
-    	<a id = "center" href="#edu">Education</a>
-    	<br>
-    	<br>
-    	<a id = "center" href="#about">About</a>
-    
-    	</ul>
-    	
+      <ul>
+        <br>
+        <a id = "utitle" style = "font-size: 18px; color: white">SECTIONS</a>
+      <br>
+      <br>
+      <a id = "center" href="#back">Background</a>
+      <br>
+      <br>
+      <a id = "center" href="#xpr">Skills</a>
+      <br>
+      <br>
+      <a id = "center" href="#xp">Experience</a>
+      <br>
+      <br>
+      <a id = "center" href="#pp">Personal Projects</a>
+      <br>
+      <br>
+      <a id = "center" href="#about">Back to Top!</a>
+      </ul>
+      
 
 
-    	
+      
     </div>
-    <img class="img-fluid" src="images/logo.png">
+    <img class="img-fluid" src="images/logo.png" style="height: 25%"> 
         
   </div>
   </nav>
 
-  <div class="container-fluid p-0" style="background-image: url('images/bodyback2.png')">
-	
+  <div class="container-fluid p-0" style="background-image: url('images/bodyback2.png');">
+  
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about" >
-    	<div id = "img">
-    	<a name = "about" ></a>
+      <div id = "img">
+      <a name = "about" ></a>
       <div class="w-100"id="firstandlast">
-        <h1 id = "name" style = "color: limegreen">>_[Brij Shah]........</h1>
-    	</br>
+        <h1 id = "name" style = "color: #1fbfb8; width: 80%">>_[Brij Shah]...</h1>
+      </br>
         <div id="occupation" style = "color: gold">Computer Science Student</div>
         <div id = "school" style = "color: steelblue">University of California, Riverside</div>
         
         <div class="skills">
       <div class="skill">
-      	<div class="skill">
+        <div class="skill">
         <div class="skill-name">C++</div>
         <div class="skill-bar">
           <div class="skill-per" per="90"></div>
@@ -410,15 +513,14 @@
     <br>
     <div id="links" style = "color: limegreen"><!--LINKS--></div>
     <br>
-
     <div id="social-icons">
-          <a target="_blank" href="https://linkedin.com/in/brijshahdotcpp">
-            <i id = "l" class="fab fa-linkedin-in"></i>
+          <a title = "Brij Shah's LinkedIn!"target="_blank" href="https://linkedin.com/in/brijshahdotcpp">
+            <i class="fab fa-linkedin-in"></i>
           </a>
-          <a target="_blank" href="https://github.com/bshah016/CS_Projects">
+          <a title = "Brij Shah's GitHub Portfolio!"target="_blank" href="https://github.com/bshah016/CS_Projects">
             <i class="fab fa-github"></i>
           </a>
-          <a target="_blank" href="mailto:brijshah717@gmail.com">
+          <a title = "Contact Brij Shah!"target="_blank" href="mailto:brijshah717@gmail.com">
             <i class="fa fa-envelope"></i>
           </a>
         </div>
@@ -427,28 +529,202 @@
         <br>
     <br>
 
-        </section>
+  </section>
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="bak">
+
+      <a name = "back"></a>
+      <br/>
+      <div id = "xpp">
+        <h2 style = "border-bottom: double thick limegreen" ><a style = "color: limegreen; font-family: monospace">>Background...</a></h2>
+        <br>
+        <div>
+          
+          <br/>
+          <br/>
+            <p> I'm currently a Freshman at  
+          <a class="underline-link" href="https://www1.cs.ucr.edu/" target="_blank" style = "color: #4da3ff;">UC Riverside</a>
+           studying Computer Science! I first got into coding when I took part in  
+           <a class="underline-link" href="#cn" style = "color: #4da3ff;">CodeNation at Newbury Park High School</a> 
+           when I was in 6th grade. I was taught the basics of HTML, CSS, and JavaScript by high school students. I later became one of the tutors once I began high school, and the rest is history! Read more about my experiences as a tutor in the Experience section.
+            </p>          
+            
+          
+        </div>
+        <br>
+        <div>
+              <strong style = "color: #4da3ff;">
+              Some of my hobbies include:
+            </strong>
+                <ul style="list-style: none">
+                  <li>&ensp; -- Graphic Design</li>
+                  <li>&ensp; -- Solving all Varieties of Rubik's Cubes</li>
+                  <li>&ensp; -- Performing Card Magic</li>
+                  <li>&ensp; -- Learning the Mechanics and Engineering behind most Exotic Cars</li>
+                  <li>&ensp; -- Playing and Watching Basketball</li>
+                  <li>&ensp; -- Being Outdoors</li>
+                </ul>
+              
+            </div>
+            <br/>
+
+            <p>
+              <strong style = "color: #4da3ff;">Outside of school,</strong> 
+              I love to research anything related to tech companies, whether it be legal news, stocks, or recent devleopments the company has made. On the side, I also love graphic design. I have numerous personal projects that have been recognized by my high school and that have won awards.<br/><br/>
+              <a class = "highlight-link" href="https://drive.google.com/file/d/1pX_XquWhTwibwIUsdlpNUjOS2QdAog9w/view?usp=sharing" target="_blank" style = "color: #4da3ff; display: inline-block;">Currently seeking internship opportunities!</a>
+            </p>
+            <br/>
+           <center>
+            
+  
+      <section class = "res" style="display: inline-block;">
+        <a href="https://drive.google.com/file/d/1pX_XquWhTwibwIUsdlpNUjOS2QdAog9w/view?usp=sharing" target="_blank" class="highlight-link">View My Resume!</a> 
+      </section>
+    </center>
+      </div>
+        <br>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="section skillsex"> 
+    <a name = "xpr"></a>
+    <br style="line-height: 0.5px" />
+    <h2 style = "border-bottom: double thick limegreen" ><a style = "color: limegreen; font-family: monospace">>Skills...</a></h2>
+    <br/>
+             <div class="section__content" style=""> 
+              <!-- <p>I’ve picked up quite a few skills during the course of my three co-ops, and aim to improve these skills everyday. Here are a few of the technologies that I have experience with:</p> --> 
+              <div class="skillz" style=""> 
+                <div class="skillz__category"> 
+                <div class="skillz__category__label">Languages</div> 
+                  <ul style="list-style-type:circle;" class = "lis">
+                  <li class="skillz__category__item">&ensp; C++</li> 
+                  <li class="skillz__category__item">&ensp; JavaScript</li> 
+                  <li class="skillz__category__item">&ensp; HTML / CSS</li> 
+                  <li class="skillz__category__item">&ensp; Python</li> 
+                  <li class = "skills__category__item">&ensp; Git</li>
+                  <li class = "skills__category__item">&ensp; Java</li>
+                  <li class = "skills__category__item">&ensp; Node.js</li>
+                  </ul> 
+                  <!-- 
+                  <li class="skillz__category__item"></li> 
+                  <li class="skillz__category__item"></li> 
+                </ul> </div> <div class="skillz__category"> 
+                  <div class="skillz__category__label">Frameworks</div> 
+                  <ul> <li class="skillz__category__item">Ember & Glimmer</li> 
+                    <li class="skillz__category__item">React</li> 
+                    <li class="skillz__category__item">Jekyll</li> 
+                    <li class="skillz__category__item">Node</li> 
+                    <li class="skillz__category__item">D3</li> 
+                    <li class="skillz__category__item">Wordpress</li> 
+                    <li class="skillz__category__item">Timber</li> 
+                  
+                </div> -->
+            
+                <div class="skillz__category" style=""> 
+                  <div class="skillz__category__label" style = "display: inline-block;">Tools  </div>
+                    <div class = "second" style = "color: #66FCF1; text-decoration: underline; display: inline-block;">(Text Editors, IDEs, Resources, etc.)</div>
+                 
+                   <ul style="list-style-type:circle;"  class = "lis"> 
+                    <li class="skillz__category__item">&ensp; Microsoft Office Suite</li> 
+                    <li class="skillz__category__item">&ensp; Visual Studio</li>
+                    <li class="skillz__category__item">&ensp; Git & Github</li> 
+                    <li class="skillz__category__item">&ensp; Vim</li>
+                  </ul> 
+                </div>
+              
+                <div class="skillz__category"> 
+                  <div class="skillz__category__label">Graphic Design Tools</div> 
+                  <ul style="list-style-type:circle;"  class = "lis"> 
+                    <li class="skillz__category__item">&ensp; PhotoShop</li> 
+                    <li class="skillz__category__item">&ensp; Adobe Illustrator</li>
+                    <li class="skillz__category__item">&ensp; Gimp</li> 
+                    <li class="skillz__category__item">&ensp; SketchUp</li> 
+                  </ul> 
+                </div> 
+  
+                <div class="skillz__category"> 
+                  <div class="skillz__category__label">Operating Systems</div> 
+                  <ul style="list-style-type:circle; float: left"  class = "lis"> 
+                    <li class="skillz__category__item">&ensp; Windows OS</li> 
+                    <li class="skillz__category__item">&ensp; Android OS</li>
+                    <li class="skillz__category__item">&ensp; Mac OS / iOS</li>
+                    <li class="skillz__category__item">&ensp; Linux
+
+                      
+                    </li> 
+                    
+                  </ul> 
+                  
+                </div>
+                 </div>
+              </div>
+                
+
+              
+
+
+
+
+
+<!--
+
+              </div>
+                <div style="font-size: 20px; margin-left: 900px; color: springgreen; line-height: 0.1px;">Click to See More Experience!</div>
+                <a href = "#exp" id = "arrow" style = "display: inline-block; float: right; margin-right: 50px; text-decoration: underline 2px; max-height: 30px">&#8595; &#8595; &#8595;</a>
+             
+         -->
+            </section> 
+    <br/>
 
     <section id="xp">
-    	<a name = "exp"></a>
+
+      <a name = "exp"></a>
       <div id = "xpp">
         <h2 style = "border-bottom: double thick limegreen" ><a style = "color: limegreen; font-family: monospace">>Experience...</a></h2>
-        <br>
         <br>
         <div>
           <div>
             <h3 id = "mlh" style = "color: #66FCF1">UCR Programming Competition 2020</h3>
             <div id = "mlh_school">
-            	<a target="_blank" href="https://ucrpc.net/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-            	UC Riverside
-            	</a>
-            	<span id = "mlh_date" style = "color: limegreen">February 22, 2020</span>
+              <a target="_blank" href="https://ucrpc.net/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
+              UC Riverside
+              </a>
+              <span id = "mlh_date" style = "color: limegreen">February 22, 2020</span>
             </div>
             <p id ="mlh_bio" style = "color: #45A29E; font-weight: 600">
-            	School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. My team and I placed 15th out of 40 total teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointers, linked lists, unit testing, and much more. All problems were coded in C++ and Python. Learned how to better communicate with a stranger group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. Practiced for weeks prior doing previous coding problems and dynamically updated my work ethic and work style.  
+              School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. My team and I placed 15th out of 40 total teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointers, linked lists, unit testing, and much more. All problems were coded in C++ and Python. Learned how to better communicate with a stranger group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. Practiced for weeks prior doing previous coding problems and dynamically updated my work ethic and work style.  
           </p>
           </div>          
             
@@ -459,9 +735,9 @@
           <div>
             <h3 id = "cutie" style = "color: #66FCF1">Cutie Hack</h3>
             <div id = "cutie_school">
-            	<a target="_blank" href="https://cutiehack.io/#/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">UC Riverside
-            	</a>
-            	<span id = "cutie_date" style = "color: limegreen">November 9, 2019</span>
+              <a target="_blank" href="https://cutiehack.io/#/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">UC Riverside
+              </a>
+              <span id = "cutie_date" style = "color: limegreen">November 9, 2019</span>
             </div>
             <p id = "cutie_bio" style = "color: #45A29E; font-weight: 600">
               School-wide hackathon where my team and I created a travel itinerary. Itinerary was coded in Java using the Eclipse IDE and GitHub. Implemented classes and functions. Had to test for every case possible to make sure there were no circumstances in which the user did not get a result. Also attended various workshops explaining different aspects of a career in Computer Science including: Team Building, Introduction to Google API's, Introduction to Git, Introduction to Linux, How to Pitch your Project, and other various workshops that introduces students to other computer engineering fields.
@@ -473,8 +749,8 @@
         <div>
             <h3 id = "codenation" style = "color: #66FCF1">CodeNation</h3>
             <div id = "codenation_school">
-            	<a target = "blank_" href="http://dev.nphs.org/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">Newbury Park High School
-            	</a>
+              <a target = "blank_" href="http://dev.nphs.org/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">Newbury Park High School
+              </a>
             <span id = "codenation_date" style = "color: limegreen">August 2015 - June 2019</span>
             </div>
             <p id = "codenation_bio" style = "color: #45A29E; font-weight: 600">
@@ -485,75 +761,108 @@
 
 
       </div>
-      	<br>
-    <br>
+        <br>
     </section>
     
     <section id="pp">
-    	<a name = "exp"></a>
+      <a name = "exp"></a>
       <div id = "ppp">
         <h2 style = "border-bottom: double thick limegreen"><a style = "color: limegreen; font-family: monospace"> >Personal Projects...</a></h2>
-        <br>
-        <br>
+        <br/>
         <div>
           <div>
-            <h3 id = "ttt" style = "color: #66FCF1">Tic Tac Toe</h3>
+            <h3 id = "ttt" style = "color: #66FCF1" href="https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp"><a style = "color: #66FCF1"href = "https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp">Tic Tac Toe<a></h3>
             <div id = "ttt_school">
-            	<a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-            	UC Riverside
-            	</a>
+              <a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
+              UC Riverside
+              </a>
             </div>
             <p id = "ttt_bio" style = "color: #45A29E; font-weight: 600">
-              	Developed a local program that simulates playing a full Tic-Tac_Toe game in the terminal. Was originally a school assignment, but I changed it to make it unique. Using the fundamentals of C++, the program makes use of functions, vectors, pass by reference, basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. 
-            </p>
+                A local program that simulates playing a full game of Tic-Tac-Toe in the terminal. Program also requires 2 users to play together. The program was originally created for a school assignment, but I continued to work on it to make it more user-friendly, efficient, and unqiue. Using the fundamentals of C++, the program makes use of functions, vectors, pass by reference, basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. You can view the code
+            <a style = "border-bottom: 1.5px solid #00BFFF;color: #00BFFF" class="underline-link" href="https://github.com/bshah016/CS_Projects/blob/master/TicTacToe.cpp" target="_blank">here.</a>
+          </p> 
+          <div class="project__used"> 
+            <span class="project__used__item">C++</span> 
+            <span class="project__used__item">Vim</span> 
+          </div> 
           </div>
           
-            
+            <br/>
           
         </div>
         <div>
-            <h3 id = "ttt" style = "color: #66FCF1">Tree</h3>
+            <h3 id = "ttt" style = "color: #66FCF1"><a style = "color: #66FCF1"href = "https://github.com/bshah016/CS_Projects/blob/master/Arrow_Drawer.cpp">Tree</a></h3>
             <div id = "ttt_school">
-            	<a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/Arrow_Drawer.cpp" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-            	UC Riverside
-            	</a>
+              <a target = "blank_" href="https://github.com/bshah016/CS_Projects/blob/master/Arrow_Drawer.cpp" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
+              UC Riverside
+              </a>
+            </div>
+
+            <!-- A local program that simulates playing a full game of Tic-Tac-Toe in the terminal. Program also requires 2 users to play together. The program was originally created for a school assignment, but I continued to work on it to make it more user-friendly, efficient, and unqiue.-->
+            <p id = "ttt_bio" style = "color: #45A29E; font-weight: 600">
+                A local program that constructs a tree made of asteriks in the terminal. Requires user input for the width of the trunk and the overall and height of the tree. Program also requires the starting width of the leaves of the tree. This allows the user to customize their own tree. The program was originally created for a school assignment, but I continued to work on it to make it more user-friendly, efficient, and unqiue. The program was implemented using the fundamentals of C++, such as basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. You can view the code
+            <a style = "border-bottom: 1.5px solid #00BFFF;color: #00BFFF" class="underline-link" href="https://github.com/bshah016/CS_Projects/blob/master/Arrow_Drawer.cpp" target="_blank">here.</a>
+          </p> 
+          <div class="project__used"> 
+            <span class="project__used__item">C++</span> 
+            <span class="project__used__item">Vim</span> 
+          </div> 
+        </div>
+
+        <br/>
+        <div>
+            <h3 id = "ttt" style = "color: #66FCF1"><a style = "color: #66FCF1" href = "https://bshah016.github.io/Digital-Contour-Drawing/">Contour Drawing</a></h3>
+            <div id = "ttt_school">
             </div>
             <p id = "ttt_bio" style = "color: #45A29E; font-weight: 600">
-              	Developed a local program that draws a tree made of asteriks. Requires user input for the width and height of the trunk of the tree as well as the starting width of the leaves of the tree. This allows the user to customize their own tree. The program was implemented using the fundamentals of C++, such as basic if-else statements, nested if-else statements, basic for loops, basic while loops, nested for loops, and variables. 
-            </p>
-          </div>
+                A public program based on a webpage that allows the user to actively implement their imagination and creativity. Program uses canvases and strokes to help the user visualize what they are drawing. The dots are drawn in timed intervals, so based on the speed of mouse motion, the strokes are different thickness. User can also draw 3-dimensional shapes. Program states the exact coordinate of the cursor, so figures that are drawn can be as accurate as can be. Some bugs still exist, but I am constantly updating the code to make it better and more user friendly. You can interact with the webpage and program
+            <a style = "border-bottom: 1.5px solid #00BFFF;color: #00BFFF" class="underline-link" href="https://bshah016.github.io/Digital-Contour-Drawing/" target="_blank">here.</a>
+          </p> 
+          <div class="project__used"> 
+            <span class="project__used__item">JavaScript</span> 
+            <span class="project__used__item">HTML</span> 
+            <span class="project__used__item">CSS</span>
+          </div> 
+        </div>
+        <br/>
+
         <div>
           <div>
-            <h3 id = "CarPages" style = "color: #66FCF1">CarGest</h3>
+            <h3 id = "CarPages" style = "color: #66FCF1"><a style = "color: #66FCF1"href = "https://bshah016.github.io/cargest/">CarGest</a></h3>
             <div id = "cp_school">
-            	<a target="_blank" href="https://bshah016.github.io/cargest/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-            	Newbury Park High School
-            	</a>
             </div>
             <p id ="cp_bio" style = "color: #45A29E; font-weight: 600">
-            Developed a local webpage using HTML, CSS, and JavaScript that lets the user sort their preferences for each car brand, expensive or not. Tells the user everything they need to know about a car brand they want to buy by directing the user to the car brands website. The user can select as many car brands as they would like and can navigate to each brand's website. Webpage also gives the user other options, and program is triggered based on user input. 
-          </p>
-          </div>
+            A public program based on a webpage made with HTML, CSS, and JavaScript that lets the user sort their preferences for each car brand, expensive or not. Tells the user everything they need to know about a car brand they want to buy by directing the user to the car brands website. The user can select as many car brands as they would like and can navigate to each brand's website. Webpage also gives the user other options, and program is triggered based on user input. You can interact with the webpage and program  
+            <a style = "border-bottom: 1.5px solid #00BFFF;color: #00BFFF" class="underline-link" href="https://bshah016.github.io/cargest/" target="_blank">here.</a>
+          </p> 
+          <div class="project__used"> 
+            <span class="project__used__item">JavaScript</span> 
+            <span class="project__used__item">HTML</span> 
+            <span class="project__used__item">CSS</span>
+          </div> 
+        </div> 
         </div>
+        <br/>
+
+        <p>And last, but not least!</p> 
+ 
         <div>
           <div>
-            <h3 id = "cr" style = "color: #66FCF1">GeeGate</h3>
-            <div id = "cr_school">
-            	<a target="_blank" href="http://dev.nphs.org/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-            	Newbury Park High School
-            	</a>
+            <h3 id = "CarPages" style = "color: #66FCF1"><a style = "color: #66FCF1">This Webpage!</h3>
+            <div id = "cp_school">
             </div>
-            <p id = "cr_bio" style = "color: #45A29E; font-weight: 600">
-              Developed a local webpage using HTML, CSS, and JavaScript that lets the user implement different filters to edit the colors of a set image and also lets the user alter the composition of the image. The user can mix and match different set filters to create a unqiue version of the image. 
-            </p>
+            <p id ="cp_bio" style = "color: #45A29E; font-weight: 600">
+            A public webpage made with HTML, CSS, JavaScript, JQuery, and Custom Google fonts. This webpage also makes use of Google analyitcs, so I will know every time you visit this webpage! Website was developed using the basic elements of HTML such as sections, divs, headers, anchors, spans, paragraphs, lists, icons, buttons, classes, ids, and images. Additionally, this webpage utilizes the basics of CSS such as transitions, webkits, and other font editing elements. <br/>This webpage is always being updated and improved upon, so come back again to see the updates!   
+          </p> 
+          <div class="project__used"> 
+            <span class="project__used__item">JavaScript</span> 
+            <span class="project__used__item">HTML</span> 
+            <span class="project__used__item">CSS</span>
+            <span class="project__used__item">JQuery</span>
+            <span class="project__used__item">Google Analytics</span>
+          </div> 
+        </div> 
         </div>
-
-        
-
-
-
-      </div>
-
     </section>
 
 
@@ -563,35 +872,7 @@
 <!--thistle-->
     
     
-    <section id="edu">
-      <div class="w-100">
-      	<a name = "edu"></a>
-        <h2 style = "border-bottom: double thick limegreen"><a style = "color: limegreen; font-family: monospace">>Education...</a></h2>
-        <br>
-        <br>
-          <div  style = "float: left" style="display: inline-block">
-            <h3><a target = "_blank" href = "https://www1.cs.ucr.edu/" style = "color: #66FCF1">University of California, Riverside</a></h3>
-           
-            <span style = "color: #45A29E; font-weight: 600">September 2019 - June 2023 (Expected)</span>
-         
-            <div style = "color: #45A29E; font-weight: 600">Bachelor's of Science in Computer Science</div>
-          </div>
-          
-        
-        
-
-        
-          <div id = "thing" style="display: inline-block">
-            <h3><a target = "_blank" href = "http://dev.nphs.org/" style = "color: #66FCF1">Newbury Park High School</a></h3>
-            <span style = "color: #45A29E; font-weight: 600">August 2015 - June 2019</span>
-            <div style = "color: #45A29E; font-weight: 600">High School Diploma</div>
-            
-          </div>
-     
-
-        
-        
-    </section>
+    
 
 
   </div>
