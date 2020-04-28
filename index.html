@@ -383,7 +383,29 @@ text-decoration: underline;
   box-shadow:inset 0 33px 0 0 black;
 
 }
+.loader-container {
 
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  justify-content: right;
+
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  animation: loader 1.5s linear infinite;
+}
+@keyframes loader {
+
+  to{
+
+    transform: scale(7);
+    
+  }
+}
 
 </style>
 
@@ -413,13 +435,17 @@ text-decoration: underline;
   gtag('config', 'UA-162710947-1');
 </script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
 
 <body id="page-top" onload = "myFunction()">
-  <div class = "loader-wrapper">
-    <span class = "loader"><span class = "loader-inner"></span></span>
+  <div class = "loader-container">
+    <div class = "loader">
+      <img src = "images/logo.png" style = "height: 200px; width: 200px"></div>
+    </div>
+
   </div>
+  
 
   <nav id="sideNav">
     <a href="#page-top">
@@ -716,15 +742,15 @@ text-decoration: underline;
         <br>
         <div>
           <div>
-            <h3 id = "mlh" style = "color: #66FCF1">UCR Programming Competition 2020</h3>
+            <h3 id = "mlh" style = "color: #66FCF1">QA Intern</h3>
             <div id = "mlh_school">
-              <a target="_blank" href="https://ucrpc.net/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
-              UC Riverside
+              <a target="_blank" href="https://www.xperi.com/" style = "color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">
+              Xperi Corp. - Calabasas, California
               </a>
-              <span id = "mlh_date" style = "color: limegreen">February 22, 2020</span>
+              <span id = "mlh_date" style = "color: limegreen">April - June 2020</span>
             </div>
             <p id ="mlh_bio" style = "color: #45A29E; font-weight: 600">
-              School-wide programming competitions spanning 5 hours where my team and I attempted ten coding problems. My team and I placed 15th out of 40 total teams. Problems ranged from very easy to very difficult involving data structures, algorithms, recursion, pointers, linked lists, unit testing, and much more. All problems were coded in C++ and Python. Learned how to better communicate with a stranger group setting when problems arise and also learned how to work together with my teammates to form a cohesive solution. Practiced for weeks prior doing previous coding problems and dynamically updated my work ethic and work style.  
+              I participated in the execution of testing end user functionality of software across various platforms. I used the software and hardware, checking functionality and searching for any failures with the system in both positive and negative use cases. They also tasked me with updating test plans to include issues found during ad-hoc testing. Used the Windows and Linux operating systems, Eclipse, Cygwin, and Bugzilla environments. I reported various substantial bugs that when fixed, will change the user functionality. Learned how to write detailed, but concise bug reports and communicate effectively in a team setting. Worked with other interns to determine different issues pertaining to the application.   
           </p>
           </div>          
             
@@ -733,14 +759,14 @@ text-decoration: underline;
         <br>
         <div>
           <div>
-            <h3 id = "cutie" style = "color: #66FCF1">Cutie Hack</h3>
+            <h3 id = "cutie" style = "color: #66FCF1">Part-Time Software Developer</h3>
             <div id = "cutie_school">
-              <a target="_blank" href="https://cutiehack.io/#/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">UC Riverside
+              <a target="_blank" href="https://www.pickupnpark.com/" style="color: #00BFFF; border-bottom: 1.5px solid #00BFFF;">Pickup N' Park
               </a>
-              <span id = "cutie_date" style = "color: limegreen">November 9, 2019</span>
+              <span id = "cutie_date" style = "color: limegreen">January 2020 - Present</span>
             </div>
             <p id = "cutie_bio" style = "color: #45A29E; font-weight: 600">
-              School-wide hackathon where my team and I created a travel itinerary. Itinerary was coded in Java using the Eclipse IDE and GitHub. Implemented classes and functions. Had to test for every case possible to make sure there were no circumstances in which the user did not get a result. Also attended various workshops explaining different aspects of a career in Computer Science including: Team Building, Introduction to Google API's, Introduction to Git, Introduction to Linux, How to Pitch your Project, and other various workshops that introduces students to other computer engineering fields.
+              I am a part-time software developer for Pickup N' Park, which is a parking app that my peers at UC Riverside and I created. Pickup N’ Park is a mobile application that was created to help college students find parking within their campuses. Our current version is available to UCR students exclusively by email verification. By the click of a few buttons, students will be able to offer their parking spots in return for a ride back to their car. I helped develop the back-end portion of the UX and I also designed some of the UI. I used Git, Ionic, HTML/CSS, Vanilla JavaScript, Node.js, AngularJS, and MySQL Databases. I learned how to communicate different problems through a completely virtual setting. 
             </p>
         </div>
 
@@ -754,7 +780,7 @@ text-decoration: underline;
             <span id = "codenation_date" style = "color: limegreen">August 2015 - June 2019</span>
             </div>
             <p id = "codenation_bio" style = "color: #45A29E; font-weight: 600">
-              A program that provided 100+ elementary middle school students with the skills and experience to be proficient in various coding languages, which would eventually lead to a career in technology at no cost. Was the lead tutor for the team that taught HTML, CSS, and JavaScript. I explained syntax, algorithms, and thought processes in terms that everyone would understand. I also learned many valuable skills from this position such as how to be polite and patient while teaching inexperienced students, how to talk to large groups of people, how to effectively teach in a way that every individual understands, and how to collaborate effectively.
+              I was a lead tutor for CodeNation at Newbury Park High School. CodeNation was a program that teaches children the importance of computers and how to be proficient in various coding languages. I was a lead tutor for the team that taught HTML, CSS, and JavaScript. I learned many valuable skills from this position such as how to be patient while teaching inexperienced students, how to talk to large groups of people, how to effectively teach in a way that every individual understands, and how to collaborate effectively. I was one of the only students that was a tutor for all four years of high school.
             </p>
           </div>
       </div>
@@ -901,6 +927,11 @@ text-decoration: underline;
             $this.attr('per', Math.floor(this.animatedValue) + '%');
           }
         });
+      });
+    </script>
+    <script>
+      $(window).on("load", function(){
+        $(".loader-container").fadeOut(1000);
       });
     </script>
 
